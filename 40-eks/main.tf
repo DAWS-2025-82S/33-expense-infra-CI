@@ -1,8 +1,8 @@
 resource "aws_key_pair" "eks" {
   key_name   = "expense-eks"
   #public_key = file("~/.ssh/eks.pub")
-  public_key="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHrOzE8MvLn569u+/+ea7Q0xLucFKjNvtayvmtkt0Io2 rajas@ManDev"
-
+  #public_key="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHrOzE8MvLn569u+/+ea7Q0xLucFKjNvtayvmtkt0Io2 rajas@ManDev"
+  public_key="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCy2cLS3fsPE0oewaaEpgtr5DtyDe130JKG3Wk/vMIxH0OixIcUBj7eC4cBp3W/9CglEDuIvqHez18ajqOSDKmJB4J9LkUH+uYv3ndhmDfGuDtnsxRlVD+B6M2u6lJMoVAH0XB1/tr4K2W5PuWgoJx+PqvnhWyKWqrB4b6m5+KJX+gOloN34Zt7xOoH9tPIZSbdXBVdPoVZJcFOurkstV4Lt7lHuB7+Ammf/y3subNYKB1aPLfp0248nflxRklAA1uENWF7j6jQea5PHafvw406rfFyPMxOX7a53l0FclaXxd2aM2S9WgPMl32+5OFjQhOW4S402EWCFo9yXCFz6XtbKIBeejNgKX1VtsQtWhjCrz3ilHVcahMQm2E6nyasACcopqd4LE7bYbnowgG6qhC5BK89zfcpWPMFcjRfuo9RSrHDNp4FCiKWWaHdcubys+NZmuaNMCjK3kCBdhkbRqZwWF4x0qwAyu3tdD4BiHvmBCBvXcSt7fJ8mVN0yNpMETk= rajas@ManDev"
 }
 
 module "eks" {
